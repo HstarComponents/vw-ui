@@ -1,0 +1,11 @@
+{
+  "name": "vw-button",
+  "description": "",
+  "version": "0.1.0",
+  "main": "lib/index.js",
+  "author": "Jay.M.Hu <hm910705@163.com>",
+  "homepage": "https://github.com/chengdujs/vw-ui#readme",
+  "license": "MIT",
+  "repository": "https://github.com/chengdujs/vw-ui/tree/master/packages/button",
+  "dependencies": {}
+}
