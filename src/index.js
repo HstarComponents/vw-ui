@@ -1,18 +1,32 @@
-import Button from '../packages/button/index.js';
-const install = function(Vue) {
+import { COMPONENTS } from './components';
+import { DIRECTIVES } from './directives';
+
+const install = Vue => {
   if (install.installed) return;
 
-  Vue.component(Button.name, Button);
-  Vue.use(InfiniteScroll);
+  // Register components
+  COMPONENTS.forEach(comp => {
+    Vue.component(comp.name, comp);
+  });
+
+  // Register derectives
+  DIRECTIVES.forEach(directive => {
+    Vue.directive(directive.name, directive);
+  });
+
+  // Register services
+  // SERVICES.forEach(service => {
+  //   Vue[service.name] = Vue.prototype[service.name] = service;
+  // });
+
+  install.installed = true;
 };
 
-// auto install
 if (typeof window !== 'undefined' && window.Vue) {
   install(window.Vue);
 };
 
-module.exports = {
+export default {
   install,
-  version: '0.0.1',
-  Button
+  version: process.env.LIB_VERSION
 };
