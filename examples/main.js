@@ -7,6 +7,8 @@ Vue.use(VwUI);
 
 import 'lodash';
 
+require('./styl/layout.styl');
+
 new Vue({
   el: '#app',
   router,

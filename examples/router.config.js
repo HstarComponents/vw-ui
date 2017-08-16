@@ -3,11 +3,13 @@ import VueRouter from 'vue-router';
 Vue.use(VueRouter);
 
 import {
-  Home
+  HomePage,
+  ButtonDemoPage
 } from './pages';
 
 const routes = [
-  { path: '', component: Home }
+  { path: '', component: HomePage },
+  { path: '/button', component: ButtonDemoPage }
 ];
 
 export const router = new VueRouter({

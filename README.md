@@ -18,8 +18,8 @@ Vue.use(VwUI);
 
 # Components
 
-- [ ] vw-actionsheet [Usage](src/components/actionsheet/README.md)
-- [ ] vw-button [Usage](src/components/button/README.md)
+- [ ] vw-actionsheet [Usage]
+- [x] vw-button [Usage](src/components/button/README.md)
 - [ ] vw-slider [Usage]
 - [ ] vw-tabbar [Usage]
 
